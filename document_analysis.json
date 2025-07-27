@@ -1,0 +1,133 @@
+{
+  "custeio": {
+    "tipo": "custeio",
+    "campos_identificados": [
+      {
+        "campo": "nome_cliente",
+        "padrao": "(?:Nome|Cliente|Solicitante)[:\\s]*([A-Za-zÀ-ÿ\\s]+)",
+        "exemplos": [
+          "Completo ",
+          "da Embarcação ",
+          "da  Embarca ção Número  da Inscri ção Data  \n "
+        ]
+      },
+      {
+        "campo": "cpf_cnpj",
+        "padrao": "(?:CPF|CNPJ)[:\\s]*(\\d{3}[.\\-]?\\d{3}[.\\-]?\\d{3}[.\\-]?\\d{2}|\\d{2}[.\\-]?\\d{3}[.\\-]?\\d{3}[.\\-]?\\d{4}[.\\-]?\\d{2})",
+        "exemplos": [
+          "915.672.119.68"
+        ]
+      },
+      {
+        "campo": "valor",
+        "padrao": "(?:Valor|Montante|Total)[:\\s]*R?\\$?\\s*([\\d.,]+)",
+        "exemplos": [
+          ".....................................",
+          "250.000,00",
+          "1.303.000,00"
+        ]
+      },
+      {
+        "campo": "data",
+        "padrao": "(?:Data|Data de)[:\\s]*(\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4})",
+        "exemplos": [
+          "05/07/2024"
+        ]
+      },
+      {
+        "campo": "endereco",
+        "padrao": "(?:Endereço|Endereco)[:\\s]*([A-Za-zÀ-ÿ\\s,\\d\\-]+)",
+        "exemplos": [
+          "Rua Julia da Costa Flores, 2036   \n"
+        ]
+      },
+      {
+        "campo": "telefone",
+        "padrao": "(?:Telefone|Tel|Fone)[:\\s]*([\\d\\s\\-\\(\\)]+)",
+        "exemplos": [
+          "(47) 996357289  \n"
+        ]
+      },
+      {
+        "campo": "finalidade",
+        "padrao": "(?:Finalidade|Objetivo|Propósito)[:\\s]*([A-Za-zÀ-ÿ\\s]+)",
+        "exemplos": [
+          "Aquisição  de Insumos e Serviços para Embarcação  \nPesqueira",
+          "da Exploração",
+          "s "
+        ]
+      },
+      {
+        "campo": "taxa_juros",
+        "padrao": "(?:Taxa|Juros)[:\\s]*([\\d.,]+%?)",
+        "exemplos": [
+          "8%",
+          "8%",
+          "8,0%"
+        ]
+      },
+      {
+        "campo": "garantia",
+        "padrao": "(?:Garantia|Colateral)[:\\s]*([A-Za-zÀ-ÿ\\s]+)",
+        "exemplos": [
+          "Aval de Claudio Jacob Couto Junior ",
+          "Aval de Claudio Jacob Couto Junior",
+          "Aval de  Claudio Jacob Couto Junior "
+        ]
+      }
+    ]
+  },
+  "investimento": {
+    "tipo": "investimento",
+    "campos_identificados": [
+      {
+        "campo": "nome_cliente",
+        "padrao": "(?:Nome|Cliente|Investidor)[:\\s]*([A-Za-zÀ-ÿ\\s]+)",
+        "exemplos": [
+          "Completo ",
+          "da Embarcação ",
+          "da Embarca ção dpNúmero  da Inscri ção Data  \n"
+        ]
+      },
+      {
+        "campo": "valor_investimento",
+        "padrao": "(?:Valor|Investimento|Capital)[:\\s]*R?\\$?\\s*([\\d.,]+)",
+        "exemplos": [
+          "............................"
+        ]
+      },
+      {
+        "campo": "tipo_investimento",
+        "padrao": "(?:Tipo|Categoria|Modalidade)[:\\s]*([A-Za-zÀ-ÿ\\s]+)",
+        "exemplos": [
+          "Investimento Pecuári o",
+          "Rede de Arrasto Costeiro Duplo ",
+          "Arrasto de Costeiro Duplo "
+        ]
+      },
+      {
+        "campo": "endereco",
+        "padrao": "(?:Endereço|Endereco)[:\\s]*([A-Za-zÀ-ÿ\\s,\\d\\-]+)",
+        "exemplos": [
+          "Rua Julia da Costa Flores, 686  \n"
+        ]
+      },
+      {
+        "campo": "telefone",
+        "padrao": "(?:Telefone|Tel|Fone)[:\\s]*([\\d\\s\\-\\(\\)]+)",
+        "exemplos": [
+          "99659 -8586  \n"
+        ]
+      },
+      {
+        "campo": "objetivo",
+        "padrao": "(?:Objetivo|Finalidade|Propósito)[:\\s]*([A-Za-zÀ-ÿ\\s]+)",
+        "exemplos": [
+          "Reforma da Embarcação  Pesqueira ",
+          "da Exploração",
+          "s "
+        ]
+      }
+    ]
+  }
+}
