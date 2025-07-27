@@ -224,7 +224,3 @@ Para contribuir com o projeto:
 ## 📞 Suporte
 
 Para dúvidas ou suporte, entre em contato através dos canais disponíveis.
-
----
-
-**Desenvolvido com ❤️ para otimizar a gestão de clientes e documentos** 
